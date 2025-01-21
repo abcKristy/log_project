@@ -31,29 +31,29 @@
 
 1. Склонируйте репозиторий:
     
-bash
+```bash
     git clone <URL репозитория>
     cd LoggerProject
-   
+ ```  
 
 2. Создайте папку для сборки:
     
-bash
+```bash
     mkdir build
     cd build
-   
+``` 
 
 3. Выполните генерацию сборочных файлов с помощью CMake:
     
-bash
+```bash
     cmake ..
-   
+```  
 
 4. Соберите проект:
     
-bash
+```bash
     cmake --build .
-   
+```   
 
 После сборки будут созданы:
 - `Logger.dll` (Windows) или `libLogger.so` (Linux) — динамическая библиотека.
@@ -61,12 +61,17 @@ bash
 
 Сборка проекта с Makefile:
     
-bash
+```bash
     make
+```
+
 Это создаст библиотеку libLogger.so в папке build и скомпилирует приложение LoggerDemo.
 Прежде чем запустить приложение, нужно указать путь к динамической библиотеке:
-bash
+
+```bash
     export LD_LIBRARY_PATH=build:$LD_LIBRARY_PATH./build/LoggerDemo
+```
+
 При запуске приложение запросит у пользователя сообщение и уровень важности. Оно будет записывать сообщения в файл log.txt.
 
 
@@ -81,6 +86,7 @@ bash
 
    Пример запуска:
    
-bash
+```bash
    ./LoggerDemo log.txt INFO
 `
+```

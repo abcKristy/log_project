@@ -124,7 +124,12 @@ LoggerProject/
 └── README.md                # Документация
 ```
 
-
+Для удобства проверки без запуска проекта на Windows, можно использовать папку build_ready
+Для запуска приложения необходимо перейти в дирректорию, где находится LoggerDemo.exe и запустить его с консоли
+```bush
+cd путь/к/проекту/build_ready/LoggerDemo/Debug
+LoggerDemo log.txt INFO
+```
 
 
 

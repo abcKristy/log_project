@@ -113,7 +113,7 @@ LoggerProject/
 │   ├── include/             # Заголовочные файлы
 │   │   └── Logger.h
 │   ├── src/                 # Реализация библиотеки
-│       └── Logger.cpp
+│   │   └── Logger.cpp
 │   └── CMakeLists.txt       # CMake конфигурация для библиотеки
 ├── LoggerDemo/              # Исходный код консольного приложения
 │   ├── src/

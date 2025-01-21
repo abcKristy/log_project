@@ -1,0 +1,10 @@
+^C:\USERS\LOLUT\ПРОГА\С++\STAG2\LOGGERPROJECT\BUILD\CMAKEFILES\5C3E299D1D2D2E1DC7B055F11F27E271\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lolut/прога/с++/stag2/LoggerProject -BC:/Users/lolut/прога/с++/stag2/LoggerProject/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/lolut/прога/с++/stag2/LoggerProject/build/LoggerProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
